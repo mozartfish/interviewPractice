@@ -23,3 +23,5 @@ class Solution:
         second_node.next = second_node.next.next 
         
         return dummy_node.next
+            
+        

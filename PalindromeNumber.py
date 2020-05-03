@@ -4,5 +4,3 @@ class Solution:
         if original == original[::-1]:
             return True
         return False
-        
-        
