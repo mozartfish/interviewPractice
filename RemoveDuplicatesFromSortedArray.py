@@ -1,11 +1,11 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        if len(nums) == 0:
-            return 0
-        length = 1
+        # two pointer method to keep track of unique value and current index
+        i = 0
         for j in range(1, len(nums)):
-            if nums[j] != nums[j - 1]:
-                nums[length] = nums[j]
-                length += 1
-        return length
+            if nums[j] != nums[i]:
+                i += 1
+                nums[i] = nums[j]
+        # since we use 0 based counting, length is always 1 more than the counter 
+        return i + 1
         
