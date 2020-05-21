@@ -52,4 +52,26 @@ def singleNumber(arr):
     #         return arr[i]
 
 
-singleNumber(input)
+# singleNumber(input)
+
+input1 = [1, 2, 2, 1]
+input2 = [2, 2]
+
+thing = set(input1)
+print(thing)
+
+def twoArray(nums1, nums2):
+    result = dict()
+    for num in nums1:
+        if num not in result:
+            result[num] = 0
+        result[num] += 1
+
+    final_result = []
+    for num in nums2:
+        if num in result and result[num] > 0:
+            result[num] -=1
+            final_result.append(num)
+    return final_result
+
+twoArray(input1, input2)
