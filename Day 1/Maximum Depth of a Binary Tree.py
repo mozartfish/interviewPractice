@@ -6,7 +6,7 @@
 #         self.right = right
 
 # Runtime Complexity: O(log n) where n represents the number of nodes in the tree
-# Space Complexity: O(1) since we didn't use any additional space than what was given in the problem
+# Space Complexity: O(n) since we didn't use any additional space than what was given in the problem
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         

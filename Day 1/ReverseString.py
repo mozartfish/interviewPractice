@@ -1,5 +1,5 @@
 # runtime complexity: O(n) where n is the number of elements in the list
-# space complexity: O(1) since we do not allocate any extra memory and use the input 
+# space complexity: O(n) since we do not allocate any extra memory and use the input 
 
 class Solution:
     def reverseString(self, s: List[str]) -> None:
