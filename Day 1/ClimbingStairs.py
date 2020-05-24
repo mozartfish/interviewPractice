@@ -1,5 +1,5 @@
 # Runtime Complexity: O(n) because of one for loop and iterating over the elements from 3 to the end
-# Space Complexity: 0 (n) because the memo table is the size of n + 1 
+# Space Complexity: 0 (n) because the memo table is the size of n
 class Solution:
     def climbStairs(self, n: int) -> int:
         if n == 1:
